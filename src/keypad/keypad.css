@@ -1,0 +1,7 @@
+.keypad {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    background-color: lightslategray;
+    border: 1px solid;
+}

@@ -1,12 +1,16 @@
-
 import './CalcFace.css';
+import { useState } from 'react';
+import Display from './display/display';
+import Keypad from './keypad/keypad';
 
-function CalcFace() {
+export default function CalcFace() {
+  const [total, setTotal] = useState(0);
+
   return (
     <div className="CalcFace">
-     <h2> </h2>
+      <Display total={total}/> 
+      <Keypad setTotal={setTotal}/> 
     </div>
   );
 }
 
-export default CalcFace;
