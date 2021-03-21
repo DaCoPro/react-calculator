@@ -1,9 +1,9 @@
 import './display.css';
 
-export default function display ({ total }) {
+export default function display ({ total, input }) {
     return (
         <div className="display">
-            <h1>{total}</h1>
+            <h1 className="total">{input}</h1>
         </div>
     )
 }
